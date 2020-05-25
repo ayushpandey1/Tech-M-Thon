@@ -1,0 +1,90 @@
+﻿Team Name:Team09
+Name : Aditi Gupta
+University Roll No: 171500017
+email: aditi.gupta_cs17@gla.ac.in
+
+Name: Ayush Pandey
+University Roll No: 171500077
+email:ayush.pandey_cs17@gla.ac.in
+
+We have solved the usecases by making a FullStack based website.
+UseCase solved by us are:
+1)Usecase-1
+
+2)Usecase-4
+
+
+Use Case 1 -
+Ability to have a real time view of how many schools or Health Centers they are serving across the nation. For this, they want a drill down view, preferably on map
+1) On the map, for each state it should highlight
+a) # of Villages
+b) # of Gram Panchayats (GP)
+c) # of City
+d) # of Schools
+e) # of Students
+f) # of Teachers
+g) # of Volunteers
+2) If you click on any state, it should drill down to next level - Region (group of districts) representing same 4 statistics of school
+3) Region → District
+4) District → City
+5) City → Gram Panchayat
+6) Gram Panchayat → Village
+Illustrative representation of data
+
+On similar lines, they would also want to have a view for their presence in various health centers across the nation
+1) # of Villages
+2) # of GP
+3) # of City
+4) # of Health Centers
+5) # of Hours Volunteered
+6) Amount Invested so far (need to come from another detailed table having investment by center/date of entry of money)
+
+
+Use Case 4:
+
+There are highly secure Labs in the nation and PCT has tie up with them to facilitate access to right people. For this PCT wants to develop an application to accept access requests and to approve those. They need a web version which should be highly responsive for good accessibility and experience on mobile also
+As an applicant user
+As an applicant, person should register
+1) Either on the portal
+2) Or on the mobile app
+3) Must upload their photo, mobile number, home address, gender, age also
+Once registered, they should
+1) Sign in On portal
+2) Or open mobile app, where their profile is already set at the time of registration, during setup
+To apply for access, logged in user should provide
+1) Lab to which access is needed
+2) Address of the Lab
+3) City of lab
+4) State of lab (should select from drop down)
+5) Access needed from which date to which date. ex May 1 - May 20
+a) Start Date
+b) End Date
+6) Time during each day in which access is needed. Ex 11 AM - 4 PM
+a) Start Time
+b) End Time
+7) Mode of entry into premise
+a) Select from list (4 Wheeler, 2 Wh, no vehicle, etc)
+b) Vehicle number
+8) How many people visiting? Default to 1. Ability to configure maximum limit
+9) On submitting, should get Access Request ID
+10) Once they click on Access Request ID, should be able to go to Status Screen to check the status
+Should be able to go to Status Screen,
+1) Should see last 10 access request, along with status
+2) Most recent request at the top
+3) Ability to click on access request ID and go to details of access request
+4) Ability to withdraw request, if status is not already visited
+5) Ability to edit request, if status is not already submitted
+6) Ability to delete saved requests
+7) For Approved Request, should be able to generate Access Card
+Access Card should have
+1) Photo of user
+2) Other details entered in the access entry request form
+As a PCT approver
+1) PCT approver should be able to create profile and be able to log in
+2) Should see all the requests pending approval
+3) For each request, should be able to see previous access requests by the requestor
+a) For this particular lab
+b) For any other lab listed in system
+c) Similar to section 2.1 of Use Case 2
+d) Ability to approve or reject the request
+4) On visiting the lab, status should change to Visited
