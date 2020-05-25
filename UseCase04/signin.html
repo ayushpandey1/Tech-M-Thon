@@ -1,0 +1,179 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+<style>
+    body {
+        background-image: url(gkl.jpg);
+        background-size: cover;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        background-color:dodgerblue;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    a:hover {
+        color: darkgreen;
+        background-color: skyblue;
+        text-decoration: none;
+    }
+    input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+</style>
+<div class="container">
+    <br>
+    <h3 class="text-center">Details </h3>
+    <hr>
+
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <header class="card-header">
+                    <h4 class="card-title mt-2">Credentials Required</h4>
+                </header>
+                <article class="card-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="col form-group">
+                                <label>Labs</label>
+                                <select id="inputState" class="form-control" required>
+                                    <option> Choose...</option>
+                                    <option>AARP Foundation</option>
+                                    <option>Bharat Sevashram Sangha</option>
+                                    <option>Children of Peace International</option>
+                                    <option>The Asia Foundation</option>
+                                    <option>Greenpeace</option>
+                                </select>
+
+                            </div> <!-- form-group end.// -->
+                            <div class="col form-group">
+                                <label>City</label>
+                                <select id="inputState" class="form-control" required>
+                                    <option> Choose...</option>
+                                    <option>New Delhi</option>
+                                    <option>Mumbai</option>
+                                    <option>Bangalore</option>
+                                    <option>Chennai</option>
+                                    <option>Kolkata</option>
+                                </select>
+                            </div> <!-- form-group end.// -->
+                        </div> <!-- form-row end.// -->
+                        <div class="form-row">
+                            <div class="col form-group">
+                                <label>State</label>
+                                <select id="inputState" class="form-control">
+                                    <option> Choose...</option>
+                                    <option>Maharashtra</option>
+                                    <option>Karnataka</option>
+                                    <option>Tamilnadu</option>
+                                    <option>West Bengal</option>
+                                    <option>Delhi</option>
+                                </select>
+
+                            </div> <!-- form-group end.// -->
+                            <div class="col form-group">
+                                <label>Start Date</label>
+                                <input type="date" id="start" name="start" style="padding: 3px">
+
+
+                            </div> <!-- form-group end.// -->
+                            <div class="col form-group">
+                                <label>End Date</label>
+                                <input type="date" id="end" name="end" style="padding:3px">
+
+                            </div> <!-- form-group end.// -->
+                        </div> <!-- form-row end.// -->
+                        <div class="col form-group">
+
+                        </div>
+                        <div class="form-row">
+                            <div class="col form-group">
+
+
+                                <label for="appt">Choose a time for accessing lab:</label>
+
+                                <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col form-group">
+                                <label>Mode of entry in premise</label>
+                                <select id="inputState" class="form-control">
+                                    <option> Choose...</option>
+                                    <option>4 Wheeler</option>
+                                    <option>2 Wheeler</option>
+                                    <option>No</option>
+
+                                </select>
+
+                            </div> <!-- form-group end.// -->
+                            <div class="col form-group">
+                                <label for="fname">Vehicle Number:</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Your Vehicle Number..." style="padding: 5px">
+
+                            </div> <!-- form-group end.// -->
+                        </div> <!-- form-row end.// -->
+
+                        <div class="form-row">
+                            <div class="col form-group">
+                                <label>Number of people visiting</label>
+                                <select id="inputState" class="form-control">
+                                    <option> Choose...</option>
+                                    <option selected="">1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+
+                            </div> <!-- form-group end.// -->
+
+                            <!-- form-group end.// -->
+                        </div> <!-- form-row end.// -->
+
+
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block" id="myBtn" onclick="statusscreen.html"> Click Here</button><br>
+
+                            <script>
+                                function sayHello() {
+                                    alert('By submitting you will get status request ID');
+                                }
+                                document.getElementById("myBtn").onclick = sayHello;
+
+                            </script>
+                            <a href="statusscreen.html"> Next</a><br>
+
+                        </div> <!-- form-group// -->
+                        <small class="text-muted">By clicking the 'Submit' button, you confirm that you accept our <br> Terms of use and Privacy Policy.</small>
+                    </form>
+                </article> <!-- card-body end .// -->
+            </div> <!-- card.// -->
+        </div> <!-- col.//-->
+
+    </div> <!-- row.//-->
+
+
+</div>
+<!--container end.//-->
